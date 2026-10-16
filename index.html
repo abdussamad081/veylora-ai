@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veylora AI</title>
+  <style>
+    body {
+      margin: 0;
+      background: #10111f;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 { color: #a78bfa; }
+    p { color: #d1d5db; }
+    button {
+      background: #7c3aed;
+      color: white;
+      border: 0;
+      border-radius: 12px;
+      padding: 14px 22px;
+      font-size: 16px;
+      margin: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Veylora AI</h1>
+  <p>Your personal AI assistant</p>
+  <p>Choose your language / Apni zubaan chunein</p>
+
+  <button onclick="setLanguage('English')">English</button>
+  <button onclick="setLanguage('اردو')">اردو</button>
+  <button onclick="setLanguage('پښتو')">پښتو</button>
+
+  <h3 id="message">Welcome to Veylora AI!</h3>
+
+  <script>
+    function setLanguage(language) {
+      document.getElementById('message').textContent =
+        'Selected language: ' + language;
+    }
+  </script>
+</body>
+</html>
